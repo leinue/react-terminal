@@ -8,6 +8,12 @@ module.exports = {
     path: __dirname + '/example',
   },
   module: {
+    preLoaders: [
+      { 
+        test: /\.js?$/, 
+        loader: 'eslint', 
+        exclude: /node_modules/ }
+    ],
     loaders: [
       {
         test: /\.js$/,

@@ -1,6 +1,8 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import Terminal from 'react-terminal'
+import Terminal from 'react-terminal';
 
-ReactDOM.render(<Terminal />, document.getElementById('app'))
+var test = 1;
+
+ReactDOM.render(<Terminal />, document.getElementById('app'));

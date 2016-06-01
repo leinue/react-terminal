@@ -23,7 +23,6 @@ Xterm.prototype.proposeGeometry  = function() {
       elementPaddingHor = parseInt(elementStyle.getPropertyValue('padding-right')) + parseInt(elementStyle.getPropertyValue('padding-left')),
       availableHeight = parentElementHeight - elementPaddingVer,
       availableWidth = parentElementWidth - elementPaddingHor,
-      container = this.rowContainer,
       subjectRow = this.rowContainer.firstElementChild,
       contentBuffer = subjectRow.innerHTML;
   let characterHeight,

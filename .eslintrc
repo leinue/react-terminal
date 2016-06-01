@@ -1,0 +1,19 @@
+{
+	"parserOptions": {
+		"ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "impliedStrict": true
+        }
+	},
+	"env": {
+        "es6": true,
+        "browser": true,
+        "commonjs": true
+    },
+    "plugins": [ 
+    	"react"
+	],
+	"extends": ["eslint:recommended", "plugin:react/recommended"]
+}

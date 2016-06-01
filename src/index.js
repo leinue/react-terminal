@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import Xterm from './fit'
+import React, {Component} from 'react';
+import Xterm from './fit';
 
-const shellPrompt = '> '
-const term = new Xterm()
+const shellPrompt = '> ';
+const term = new Xterm();
 
 term.prompt = function () {
   term.write('\r\n' + shellPrompt);
@@ -27,10 +27,10 @@ term.on('key', function (key, ev) {
 
 class Terminal extends Component {
 	componentDidMount() {
-		const terminalContainer = document.getElementById('terminal-container')
+		const terminalContainer = document.getElementById('terminal-container');
 
-		term.open(terminalContainer)
-		term.fit()
+		term.open(terminalContainer);
+		term.fit();
 
 		term.writeln('Welcome to xterm.js');
 		term.writeln('Just type some keys in the prompt below.');
@@ -38,7 +38,7 @@ class Terminal extends Component {
 		term.prompt();
 	}
   render() {
-  	return <div id="terminal-container"></div>
+		return <div id="terminal-container"></div>;
   }
 }
 
